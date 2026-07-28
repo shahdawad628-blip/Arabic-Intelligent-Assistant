@@ -9,7 +9,7 @@
 | ---------------- | ------------------------------------ |
 | Full Name        |  shahd mohamed mohamed awad                                     |
 | Project Name     |     Arabic-Intelligent-Assistant                                 |
-| GitHub Username  |                                      |
+| GitHub Username  |        shahdawad628-blip                              |
 | Challenge Batch  | June–July 2026                       |
 | Training Program | Large Language Models (LLMs) Program |
 | Organization     | [**Edrak for Ai**](https://edrak4ai.com/en)                         |
