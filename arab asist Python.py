@@ -1,8 +1,8 @@
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# تحميل موديل خفيف مناسب لبيئة Streamlit Cloud
-model_name = "aubmindlab/aragpt2-medium"  # موديل عربي خفيف
+# تحميل موديل عربي خفيف
+model_name = "aubmindlab/aragpt2-medium"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
@@ -11,13 +11,9 @@ st.set_page_config(page_title="المساعد العربي الذكي", page_ico
 st.title("🤖 المساعد العربي الذكي")
 st.write("اختر شخصية المساعد واكتب سؤالك بالعربية:")
 
-# اختيار الشخصية
 persona = st.radio("اختر شخصية المساعد:", ["رسمية سياسية", "تحليل علم نفس", "تعليم للأطفال"])
-
-# إدخال السؤال
 question = st.text_area("اكتب سؤالك هنا:", placeholder="مثلاً: ما معنى الذكاء الاصطناعي؟")
 
-# زر الإرسال
 if st.button("إرسال"):
     prompt = f"بأسلوب {persona}، أجب على السؤال التالي:\n{question}"
     inputs = tokenizer(prompt, return_tensors="pt")
