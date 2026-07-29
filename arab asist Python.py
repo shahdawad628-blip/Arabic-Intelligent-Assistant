@@ -220,7 +220,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 # إعداد الموديل
 bnb_config = BitsAndBytesConfig(load_in_8bit=True)
-model_name = "tiiuae/falcon-1b"
+model_name = "aubmindlab/aragpt2-medium"
+
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, device_map="auto")
 
