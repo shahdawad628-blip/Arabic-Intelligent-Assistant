@@ -1,8 +1,8 @@
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# تحميل موديل خفيف مناسب لـ Streamlit Cloud
-model_name = "aubmindlab/aragpt2-medium"   # ممكن تستبدليه بـ "tiiuae/falcon-1b"
+# تحميل موديل خفيف مناسب لبيئة Streamlit Cloud
+model_name = "aubmindlab/aragpt2-medium"  # موديل عربي خفيف
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
