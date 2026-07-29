@@ -4,3 +4,9 @@ faiss-cpu
 gradio
 streamlit
 sentence-transformers
+transformers
+datasets
+langchain
+accelerate
+evaluate
+pydantic
