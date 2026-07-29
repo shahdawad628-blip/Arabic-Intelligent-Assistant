@@ -18,34 +18,53 @@
 
 # 📖 Project Overview
 
-Briefly describe your project.
+Arabic-Intelligent-Assistant هو مساعد ذكي باللغة العربية يعتمد على نماذج اللغة الكبيرة (LLMs) لتقديم إجابات دقيقة وسلسة في مجالات متعددة مثل السياسة، علم النفس، وتعليم الأطفال.
+تم تطوير المشروع ضمن تحدي Tips Hindawi Challenge (June–July 2026) لتطبيق تقنيات الذكاء الاصطناعي في مشاريع واقعية.
 
 ---
 
 # ✨ Features
 
-* Feature 1
-* Feature 2
-* Feature 3
+تعدد الشخصيات: المساعد يتغير أسلوبه حسب المجال (سياسي، نفسي، تعليمي).
+
+واجهة Streamlit تفاعلية: تصميم بسيط وجذاب يسهل على المستخدم التعامل.
+
+دمج LangChain وFAISS: لتحسين استرجاع المعلومات من قواعد بيانات نصية.
+
+دعم اللغة العربية بالكامل: المساعد يفهم ويجيب بالعربية الفصحى.
+
+كفاءة عالية بفضل Quantization: لتقليل استهلاك الموارد أثناء التشغيل.
 
 ---
 
 # 🛠️ Technologies Used
 
 List the technologies, frameworks, and tools used in this project.
-
+| التقنية | الاستخدام |
+| --- | --- |
+| **LangChain** | تنظيم سير عمل المساعد وربط قواعد البيانات |
+| **Transformers (Falcon‑7B)** | توليد الإجابات الذكية |
+| **FAISS** | البحث السريع في النصوص |
+| **Streamlit** | بناء واجهة المستخدم |
+| **Hugging Face Hub** | تحميل النماذج الجاهزة |
+| **BitsAndBytes** | ضغط الموديل لتقليل الذاكرة |
 ---
 
 # ⚙️ Installation
 
 Explain how to install and run the project.
+git clone https://github.com/shahdawad628-blip/Arabic-Intelligent-Assistant.git
+cd Arabic-Intelligent-Assistant
+pip install -r requirements.txt
+streamlit run arab asist Python.py
 
 ---
 
 # 🚀 Usage
 
 Describe how to use the project.
-
+بعد تشغيل التطبيق، اختَر شخصية المساعد من القائمة، ثم اكتب سؤالك بالعربية واضغط "إرسال".
+سيقوم المساعد بتحليل السؤال والرد بأسلوب الشخصية المختارة.
 ---
 
 # 📸 Demo
@@ -57,15 +76,16 @@ Add screenshots, GIFs, or a demo video.
 # 📈 Results
 
 Share your project's outcomes or achievements.
-
+المشروع نجح في تقديم مساعد عربي متعدد المجالات بدقة عالية وسرعة استجابة ممتازة، مع واجهة سهلة الاستخدام ومخرجات لغوية طبيعية.
 ---
 
 # 🔮 Future Improvements
 
-* Improvement 1
-* Improvement 2
-* Improvement 3
+إضافة دعم صوتي (تحويل النص إلى كلام).
 
+توسيع قاعدة البيانات لتشمل مجالات جديدة.
+
+دمج واجهة دردشة تفاعلية متعددة الجلسات.
 ---
 
 # 📚 About the Challenge
