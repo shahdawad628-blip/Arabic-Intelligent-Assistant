@@ -49,14 +49,6 @@ df['output'] = df['output'].str.replace('[^ء-ي ]', '', regex=True)
 df.head()
 
 
-!pip install transformers datasets sentence-transformers langchain faiss-cpu accelerate evaluate pydantic gradio
-!pip install langchain langchain-community faiss-cpu sentence-transformers
-!pip install -U langchain langchain-community langchain-huggingface langchain-core langchain-text-splitters
-!pip install -U langchain langchain-community langchain-huggingface
-!pip install -U langchain langchain-community langchain-huggingface langchain-core
-!pip install -U langchain langchain-community langchain-huggingface langchain-core
-!pip install -U huggingface_hub
-!pip install -U huggingface_hub transformers accelerate
 
 
 import transformers, datasets, sentence_transformers, langchain, faiss, accelerate, evaluate, pydantic, gradio
@@ -213,7 +205,6 @@ iface = gr.Interface(
 iface.launch()
 
 
-!pip install streamlit
 
 
 import streamlit as st
