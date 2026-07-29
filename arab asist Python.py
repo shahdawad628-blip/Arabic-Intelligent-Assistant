@@ -19,9 +19,6 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 # Use the kagglehub client library to attach Kaggle resources like competitions, datasets, and models to your session
 # Learn more about kagglehub: https://github.com/Kaggle/kagglehub/blob/main/README.md
 
-import kagglehub
-# kagglehub.dataset_download('<owner>/<dataset-slug>')
-
 
 
 
@@ -223,7 +220,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 # إعداد الموديل
 bnb_config = BitsAndBytesConfig(load_in_8bit=True)
-model_name = "tiiuae/falcon-7b-instruct"
+model_name = "tiiuae/falcon-1b"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, device_map="auto")
 
