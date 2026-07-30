@@ -52,6 +52,7 @@ List the technologies, frameworks, and tools used in this project.
 
 # ⚙️ Installation
 
+
 Explain how to install and run the project.
 git clone https://github.com/shahdawad628-blip/Arabic-Intelligent-Assistant.git
 cd Arabic-Intelligent-Assistant
@@ -63,6 +64,7 @@ streamlit run arab asist Python.py
 # 🚀 Usage
 
 Describe how to use the project.
+
 بعد تشغيل التطبيق، اختَر شخصية المساعد من القائمة، ثم اكتب سؤالك بالعربية واضغط "إرسال".
 سيقوم المساعد بتحليل السؤال والرد بأسلوب الشخصية المختارة.
 ---
@@ -71,7 +73,9 @@ Describe how to use the project.
 
 Add screenshots, GIFs, or a demo video.
 
----
+---<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3a5025c1-6c2f-475b-922a-c21abc78136d" />
+
+<img width="1280" height="668" alt="image" src="https://github.com/user-attachments/assets/6a564f62-fa0a-4508-90be-b856fb6f254a" />
 
 # 📈 Results
 
@@ -86,7 +90,7 @@ Share your project's outcomes or achievements.
 توسيع قاعدة البيانات لتشمل مجالات جديدة.
 
 دمج واجهة دردشة تفاعلية متعددة الجلسات.
----
+
 
 # 📚 About the Challenge
 
