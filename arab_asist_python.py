@@ -7,7 +7,7 @@ st.title("🤖 المساعد العربي الذكي")
 st.write("اختر شخصية المساعد وتحدث معه بالعربية:")
 
 # تحميل موديل عربي خفيف
-model_name = "RichardErkhov/akhooli_-_gpt2-small-arabic-gguf"
+model_name = "akhooli/gpt2-small-arabic"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
