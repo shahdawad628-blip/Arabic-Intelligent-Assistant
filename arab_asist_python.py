@@ -7,7 +7,7 @@ st.title("🤖 المساعد العربي الذكي")
 st.write("اختر شخصية المساعد وتحدث معه بالعربية:")
 
 # تحميل موديل عربي خفيف
-model_name = "aubmindlab/aragpt2-medium"
+model_name = "aubmindlab/aragpt2-small"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
